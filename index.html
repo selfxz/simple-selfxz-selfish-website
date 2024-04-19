@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Template portafolio desarrollador UI/UX " />
+    <title>USEP</title>
+    <link rel="icon" type="image/png" href="imagen/logo.png">
+    <link rel="stylesheet" href="css/aea.css" />
+    <link rel="stylesheet" href="css/audio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
+    <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <link rel="stylesheet" href="css/whats.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ 
+
+
+         <link rel="stylesheet" href="css/whats2.css">
+        <div class="nav-bottom">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+                rel="stylesheet">
+                    <div class="popup-whatsapp fadeIn">
+                        <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                                <i class="material-icons icon-font-color">close</i>
+                            </button> 
+                              
+                            <p>  <img src="imagen/sebas.png" width="50">  Hola, ¿en que podemos ayudarle? </p>
+                               
+                        </div>
+                        <div class="content-whatsapp -bottom">
+                            <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+                               
+                               
+                              
+                      
+                            <button class="send-msPopup" id="send-btn" type="button">
+                                <i class="material-icons icon-font-color--black">send</i>
+                            </button>
+            
+                        </div>
+                    </div>
+                <button type="button" id="whats-openPopup" class="whatsapp-button">
+                    <div class="float" >
+                    <i class="fa fa-whatsapp my-float"></i></div>
+                </button>
+                <div class="circle-anime"></div>
+            <script  src="js/script2.js"></script>    
+        </div>
+            <!-- HEADER -->
+            <header class="flex w-full fixed top-0 z-1">
+                <nav class="flex justify-content-between w-full navbar">
+                    <span class="logo cursor-pointer" onclick="scrollToSection('home')">
+                        <img src="./imagen/logo.png" alt="Logo portafolio" width="50" height="50">
+                    </span>
+                    <input type="checkbox" aria-label="Checkbox para mostrar y quitar hamburger menu"
+                        class="checkbox xl:hidden">
+                    <div class="hamburger__lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <div class="header__info flex align-items-center gap-3">
+                        <ul class="flex flex-column xl:flex-row list-none">
+                            <li onclick="scrollToSection('about')">Nosotros</li>
+                            <li onclick="scrollToSection('services')">Cursos</li>
+                            <li onclick="scrollToSection('portafolio')">Modalidades</li>
+                            <li onclick="scrollToSection('contact')">Contacto</li>
+                        </ul>
+                        <div class="hireMe__button pt-4">
+                            <a href="mailTo:sebassalinasobregon@gmail.com" aria-label="Enviar mensaje al correo"
+                                class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Solicitud</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="container1">
+                <section id="home"
+                    class="home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
+                    <div class="left__content col-12 xl:col-6">
+                        <div class="message__bubble triangle mb-4 md:mb-2">
+                            <div class="message__text p-2 sm:p-3 text-center">
+                                <p>Hola, Somos La Futura Mejor Universidad</p>
+                            </div>
+                        </div>
+                        <h1 class="text-3xl sm:text-5xl md:text-7xl">Universidad Selfxz Egoista Del Perú</h1>
+                        <p class="text-white-500">
+                            ¡Bienvenidos a la Universidad Selfxz Egoísta del Perú! Fundada en el año 2000, nuestra institución está diseñada para formar a los líderes más egoístas
+                            en el mundo de la programación y la tecnología. Con programas académicos innovadores y actualizados, y un enfoque en el pensamiento crítico y la creatividad,
+                            nuestros estudiantes están preparados para triunfar en un mundo digital en constante evolución. ¡Únete a nuestra comunidad de líderes egoístas y transforma tu
+                            futuro hoy mismo!
+                        </p>
+                        <div class="home__buttons flex align-items-center gap-2 mt-6">
+                            <a href="reglas.html"
+                                class="cursor-pointer border-round-lg no-underline">REGLAS DE LA USEP</a>
+                            <a href="sobre_nosotros.html"
+                                class="cursor-pointer border-round-lg no-underline">SOBRE NOSOTROS</a>
+                            <a href="creador.html"
+                                class="cursor-pointer border-round-lg no-underline">EL CREADOR</a>
+                        </div>
+                    </div>
+                    <div class="right__content col-9 sm:col-6 xl:col-5">
+                        <img src="./imagen/logo.png" alt="Foto perfil" width="100%" height="100%">
+                    </div>
+                </section>
+                <!--ABOUT ME-->
+                <section id="about" class="about__me w-full min-h-screen flex align-items-center">
+                    <div class="aboutMe__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0">
+                        <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
+                            <h1 class="text-3xl md:text-5xl">USEP</h1>
+                            <p class="text-blue-500">Somos una Universidad nueva con mucho pretigio y que tiene muchas metas que pasar para ser una de las mejores universidades del Perú
+                                ya que tenemos el apoyo de senati y nuestros % de universidad es:
+                            </p>
+                            <div class="knowledge flex flex-column gap-3 mt-5">
+                                <p>PRECENCIA 100%</p>
+                                <div class="progress__bar progress__algoritmia">
+                                    <span></span>
+                                </div>
+                                <p>SEDES EN BUEN ESTADO 99%</p>
+                                <div class="progress__bar progress__seguridad">
+                                    <span></span>
+                                </div>
+                                <p>CLASES PRESENCIALES 90%</p>
+                                <div class="progress__bar progress__java">
+                                    <span></span>
+                                </div>
+                                <p>CLASES VIRTUALES 95%</p>
+                                <div class="progress__bar progress__web">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="hireMe__button pt-4">
+                                <a href="mailTo:sebassalinasobregon@gmail.com" aria-label="Enviar mensaje al correo"
+                                    class="cursor-pointer no-underline border-round-lg">ESCRIBAME</a>
+                            </div>
+        
+                        </div>
+                        <div class="image col p-0 mt-6 md:mt-0">
+                            <iframe width="105%" height="105%" src="https://www.youtube.com/embed/taCBoM6rQKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section>
+                <audio id="player" src="audio/GALLIUM - All I Wanna [NCS Release].m4a"></audio>
+                <div class="player">
+                    <div class="control">
+                        <i class="fas fa-play" id="playbtn"></i>
+                    </div>
+                <div class="info">
+                    GALLIUM - All I Wanna
+                    <div class="bar">
+                        <div id="progress"></div>
+                    </div>
+                </div>
+                <div id="current">0:00</div>
+                <script src="js/player.js"></script>
+            </div>
+            </div>
+            <section class="freelancer mb-4 mt-4 min-w-full flex flex-column justify-content-center align-items-center">
+                <p class="text-sm">¿QUIERES MATRICULARTE?</p>
+                <h1 class="text-center">SOLO DALE A INSCRIBETE</h1>
+                <div class="hireMe__button pt-4">
+                    <a href="mailTo:sebassalinasobregon@gmail.com" aria-label="Enviar mensaje al correo"
+                        class="cursor-pointer no-underline border-round-lg">INSCRIBETE</a>
+                </div>
+            </section>
+            <div class="container1">
+                <section id="services" class="services min-h-full w-full pb-7">
+                    <div class="services__title flex flex-column gap-3 text-center">
+                        <h1 class="text-3xl md:text-5xl">CURSOS</h1>
+                    </div>
+                    <div class="services__card w-full grid grid-nogutter mt-7 gap-5">
+                        <div class="card flex align-items-center col-12 sm:col-4 lg:col-4 gap-3 p-2">
+                            <div class="service__logo flex align-items-center justify-content-center">
+                            <a id= "link" href="https://www.python.org/"><i class="fa-brands fa-python"> </i>
+                            </div>
+                            <div class="service__name">
+                            <p>PYTHON</p></a>
+                            </div>
+                        </div>
+                   
+                        <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
+                            <div class="service__logo flex align-items-center justify-content-center ">
+                            <a id= "link" href="https://pe.wordpress.org/download/"><i class="fa-brands fa-wordpress"></i>
+                            </div>
+                            <div class="service__name">
+                                <p>Wordpress</p></a>
+                            </div>
+                        </div>
+                        <div class="card flex align-items-center col-12 sm:col-6 md:col-3 lg:col gap-3 p-2">
+                            <div class="service__logo flex align-items-center justify-content-center ">
+                            <a id= "link" href="https://angular.io/"><i class="fa-brands fa-angular"></i>
+                            </div>
+                            <div class="service__name">
+                                <p>Angular</p></a>
+                            </div>
+                        </div>
+                        <div class="card flex align-items-center col-12 sm:col md:col lg:col-4 gap-3 p-2">
+                            <div class="service__logo flex align-items-center justify-content-center ">
+                            <a id= "link" href="https://es.reactjs.org/"><i class="fa-brands fa-react"></i>
+                            </div>
+                            <div class="service__name">
+                                <p>React Js</p></a>
+                            </div>
+                        </div>
+                        <div class="card flex align-items-center col-12 sm:col-6 md:col-4 lg:col-4 gap-3 p-2">
+                            <div class="service__logo flex align-items-center justify-content-center ">
+                                <a id= "link" href="https://www.servicenow.com/es/workflows/creator-workflows/what-is-mobile-development.html"><i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+                            <div class="service__name">
+                                <p>Desarrollo Móvil</p></a>
+                            </div>
+                        </div>
+                        <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
+                            <div class="service__logo flex align-items-center justify-content-center ">
+                                <a id= "link" href="https://geniolibre.com/?gclid=Cj0KCQjwz6ShBhCMARIsAH9A0qWXDfzBy4yzeYmbweWrv20XHP-v1wfK_L1HqH9LQ7mEfqCMc98swgYaAo1bEALw_wcB"><i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="service__name">
+                                <p>Desarrollo web</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--mi Carrera -->
+                <section id="portafolio" class="portafolio min-h-full w-full pb-8 pt-8">
+                    <div class="portfolio__title flex flex-column gap-3 text-center">
+                        <h1 class="text-3xl md:text-5xl">¿QUE QUERENOS EN NUESTRA UNIVERSIDAD?</h1>
+                        <p class="text-silver-400 text-sm md:text-base">
+                            La universidad  Selfxz Egoísta del Perú es una institucion educativa de mucho prestigio, <br>
+                            comprometida a con la formación  de líderes en el campo de la tecnología e informatica, <br>
+                            y dedicada a la exelecia academica, la innovacion y liderazgo en la educación  <br>
+                            tecnologica del Perú. ¡unete a nuestra comunidad de lideres egoistas y transforma tu futuro hoy mismo! <br>
+                            Aqui te mostramos mas informacion de nosotros:
+                        </p>
+                    </div>
+                    <div class="portfolio__gallery">
+                        <div class="gallery__categories mb-5 mt-5">
+                            <ul class="flex list-none flex-wrap justify-content-center gap-3">
+                                <li class="filter-item active" data-filter="all">Todos</li>
+                                <li class="filter-item " data-filter="docentes">DOCENTES</li>
+                                <li class="filter-item " data-filter="carrera">CARRERAS</li>
+                                <li class="filter-item " data-filter="co">CONVENIO</li>
+                                <li class="filter-item " data-filter="comunidad">COMUNIDAD</li>
+                            </ul>
+                        </div>
+                        <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
+                            <div class="project__card carrera">
+                                <img src="imagen/software.gif" alt="">
+                                <div class="overlay"></div>
+                                <div
+                                    class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                                    <h2>QUE ES IN UNG DE SOFTWARE CON IA?</h2>
+                                    <p>La Ingeniería de Software con Inteligencia Artificial se centra en la transformación del desarrollo de software. Desde el código hasta la implementación, la IA está mejorando su juego de manera lenta pero segura y nos ayuda a descubrir un nuevo paradigma para inventar tecnología.
+                                    </p>
+                                    <span><a id="link"href="https://www.senati.edu.pe/especialidades/tecnologias-de-la-informacion/ingenieria-de-software-con-inteligencia-artificial"><i class="fa-solid fa-brain"></a></i></span>
+                                </div>
+                            </div>
+                            <div class="project__card comunidad">
+                                <img src="imagen/comunidad.gif" alt="">
+                                <div class="overlay"></div>
+                                <div
+                                    class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                                    <h2>COMUNIDAD</h2>
+                                    <p>Tenemos una comunidad muy amplia ya que somos de mucho pretigio y tenemos muy altas espectativas de nuestra comunidad
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="project__card carrera">
+                                <img src="imagen/web.gif" alt="">
+                                <div class="overlay"></div>
+                                <div
+                                    class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                                    <h2>QUE ES UN DESARROLLADOR WEB?</h2>
+                                    <p>Podemos definir el Desarrollo Web como el proceso de creación de un sitio web, una aplicación o un software. Se debe hacer un estudio para determinar las necesidades del cliente y a partir de ahí poner en marcha una interfaz atractiva e incorporar funcionalidades para el usuario final.
+                                    </p>
+                                    <span><a id="link" href="https://www.thebridge.tech/blog/que-es-el-desarrollo-web-web-development#:~:text=Podemos%20definir%20el%20Desarrollo%20Web,funcionalidades%20para%20el%20usuario%20final."><i class="fa-solid fa-brain"></a></i></span>
+                                </div>
+                            </div>
+                            <div class="project__card docentes">
+                                <img src="imagen/docentesxd.gif" alt="">
+                                <div class="overlay"></div>
+                                <div
+                                    class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                                    <h2>DOCENTES</h2>
+                                    <p> Docentes con muchos años de enseñansa y tambien docentes modernos muy conocidos ya que en esta universidad se les enseñara lo antiguo y lo nuevo.
+                                    </p>
+                                    <span><a id="link" href="https://www.bbc.com/mundo/noticias-america-latina-38332718"><i id="link" class="fa-solid fa-user-tie"></a></i></span>
+                                </div>
+                            </div>
+                            <div class="project__card co">
+                                <img src="imagen/FDownloader.Net - 327925644480826(720p) (1).gif" alt="">
+                                <div class="overlay"></div>
+                                <div
+                                    class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                                    <h2>SENATI</h2>
+                                    <p>Agradecemos a senati por apollarnos en nuestro camino al exito.
+                                    </p>
+                                    <span><a href="https://www.senati.edu.pe/"><i id="link" class="fa-solid fa-magnifying-glass"></a></i></span>
+                                </div>
+                            </div>
+                            <div class="project__card carrera">
+                                <img src="imagen/diseno.gif" alt="">
+                                <div class="overlay"></div>
+                                <div
+                                    class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                                    <h2>Que es Diseño grafico digital?</h2>
+                                    <p>El diseño digital o diseño gráfico digital es el término que se utiliza para referirse a la disciplina que se encarga de la conceptualización de ideas para convertirlas al lenguaje visual específicamente en el ecosistema digital.
+                                    </p>
+                                    <span><a href="https://es.wikipedia.org/wiki/HTML"><i id="link" class="fa-solid fa-brain"></a></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <footer id="contact" class="min-h-full w-full flex grid col-12 justify-content-center pb-8 pt-8 lg:text-center">
+                    <div class="social__media col-12 md:col-4 flex flex-column justify-content-between">
+                        <h3>USEP</h3>
+                        <p>Programas Académicos</p>
+                        <p>Actividades Estudiantiles</p>
+                        <p>Carreras de Tecnologia</p>
+                        <div class="social__mediaIcons mt-5 flex lg:justify-content-center gap-3">
+                            <a href="https://www.youtube.com/channel/UCnvw_hDZVwUqWDO6k6s5GZA" target="_blank" aria-label="Ir a whatsapp">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="https://www.instagram.com/sebas_slns/" target="_blank" aria-label="Ir a instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@sbtn.slns" target="_blank" aria-label="Ir a tiktok">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact col-12 sm:col-6 sm:pt-0 md:pt-2 md:col-4 flex flex-column justify-content-between md:align-items-center">
+                        <h3>Contacto</h3>
+                        <div class="phone__number flex align-items-center gap-2">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+51 960090871</p>
+                        </div>
+                        <div class="email flex align-items-center gap-2">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>sebassalinasobregon@gmail.com</p>
+                        </div>
+                        <a href="mailTo:sebassalinasobregon@gmail.com"
+                            class="cursor-pointer text-center col-4 sm:col-6 xl:col-4 mt-3 no-underline border-round-lg">
+                            <span>
+                                <i class="fa-solid fa-message"></i>
+                            </span>Escríbeme
+                        </a>
+                    </div>
+                    <div class="my__services col-12 sm:col-6 sm:p-0 md:col-4 md:pt-2 md:align-items-center flex flex-column justify-content-between">
+                        <h3>Servicios</h3>
+                        <p>Blog</p>
+                        <p>Soporte</p>
+                        <p>Inspiración</p>
+                    </div>
+                </footer>  
+            </div>
+<script>
+    const filterContainer = document.querySelector(".gallery__categories");
+    const galleryItems = document.querySelectorAll(".project__card");
+
+    filterContainer.addEventListener("click", (event) => {
+        if (event.target.classList.contains("filter-item")) {
+            filterContainer.querySelector(".active").classList.remove("active");
+            event.target.classList.add("active")
+            const filterValue = event.target.getAttribute("data-filter")
+            galleryItems.forEach(item => {
+                if (item.classList.contains(filterValue) || filterValue === "all") {
+                    item.classList.remove("hide")
+                    item.classList.add("show")
+                } else {
+                    item.classList.remove("show")
+                    item.classList.add("hide")
+                }
+            })
+        }
+    })
+
+    function scrollToSection(sectionId){
+        document.getElementById(sectionId).scrollIntoView({behavior:"smooth"})
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</body>
+
+</html>
