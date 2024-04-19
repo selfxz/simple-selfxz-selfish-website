@@ -137,7 +137,7 @@ header {
   
   body {
     font-family: 'Open Sans', sans-serif;
-    background-image: url('/imagen/fondo.gif');
+    background-image: url('../fondo.gif');
     background-attachment: fixed;
     background-size: auto;
     background-position: center;
