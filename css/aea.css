@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: url('/imagen/fondo.gif');
+    background-image: url('../fondo.gif');
     font-family:var(--font);
     color: var(--font-color);
     height: 100vh;
